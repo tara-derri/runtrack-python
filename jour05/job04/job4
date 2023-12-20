@@ -1,0 +1,12 @@
+ def draw_tapis_diagonale(n):
+    for i in range(n + 1):
+        for j in range(n + 1):
+            if i == j:
+                print('\\', end='')
+            elif i == 0 or i == n or j == 0 or j == n:
+                print('#', end='')
+            else:
+                print(' ', end='')
+        print()
+
+draw_tapis_diagonale(10)
